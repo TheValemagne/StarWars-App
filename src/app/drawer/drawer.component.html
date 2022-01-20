@@ -1,1 +1,18 @@
-<p>drawer works!</p>
+<mat-drawer-container class="example-container">
+    <mat-drawer #drawer mode="side">
+      <mat-nav-list>
+        <mat-list-item [routerLink]="['/accueil']">
+          <span class="full-width">Accueil</span>
+          <mat-icon mat-list-icon>home</mat-icon>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/contact']">
+          <span class="full-width">Contact</span>
+          <mat-icon mat-list-icon>contact_support</mat-icon>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <mat-drawer-content class="sidenav_container">
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
