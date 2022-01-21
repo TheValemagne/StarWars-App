@@ -2,6 +2,5 @@ app-sidenav { display: flex; }
 mat-drawer-container { flex: 1 1 auto; }
 
 .sidenav_container {
-  min-height: 100vh !important;
+  min-height: calc(100vh - 64px) !important;
 }
-
