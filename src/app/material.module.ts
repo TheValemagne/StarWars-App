@@ -9,6 +9,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatCardModule} from "@angular/material/card";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 const modules = [
   MatButtonModule,
@@ -19,7 +20,8 @@ const modules = [
   MatFormFieldModule,
   MatRadioModule,
   MatCardModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSlideToggleModule
 ];
 
 @NgModule({
