@@ -1,0 +1,12 @@
+<section class="example-section">
+  <mat-slide-toggle
+    (change)="onChange()"
+    [checked]="checked"
+    [color]="color"
+    [disabled]="disabled"
+    class="example-margin">
+    Decal Pattern
+  </mat-slide-toggle>
+</section>
+
+<div (chartInit)="onChartInit($event)" [options]="chartOption" [theme]="theme" class="demo-chart" echarts></div>

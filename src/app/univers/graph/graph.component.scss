@@ -1,0 +1,27 @@
+.demo-chart {
+  height: 400px;
+}
+
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  max-width: 80vw;
+}
+
+.example-margin {
+  margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .example-section {
+    max-width: 100vw;
+  }
+}
