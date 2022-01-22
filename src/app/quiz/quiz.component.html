@@ -7,7 +7,7 @@
   </app-question>
 </div>
 
-<app-result *ngIf="finished"></app-result>
+<app-result *ngIf="finished" [scorePercentage]="score/questions.length * 100"></app-result>
 
 
 
