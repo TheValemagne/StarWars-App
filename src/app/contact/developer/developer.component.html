@@ -1,15 +1,15 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <img *ngIf="developer.photo" mat-card-avatar src="{{developer.photo}}" alt="Avatar du developer"/>
+    <img *ngIf="developer.photo" alt="Avatar du developer" mat-card-avatar src="{{developer.photo}}"/>
     <mat-card-title>{{developer.nom | uppercase}} {{developer.prenom}}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <mat-card-subtitle class="info">
       <mat-icon>email</mat-icon>
       <a
+        class="truncate"
         href="mailto:{{developer.email}}"
         title="Send an email to"
-        class="truncate"
       >{{developer.email}}</a
       >
     </mat-card-subtitle>

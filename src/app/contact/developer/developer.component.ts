@@ -1,6 +1,5 @@
-import { Component,
-         Input} from '@angular/core';
-import { Developer } from '../developer.modele';
+import {Component, Input} from '@angular/core';
+import {Developer} from '../developer.modele';
 
 @Component({
   selector: 'app-developer',
@@ -10,5 +9,6 @@ import { Developer } from '../developer.modele';
 export class DeveloperComponent {
   @Input() developer!: Developer;
 
-  constructor() { }
+  constructor() {
+  }
 }

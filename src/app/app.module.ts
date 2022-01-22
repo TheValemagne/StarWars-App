@@ -14,7 +14,7 @@ import {ContactComponent} from './contact/contact.component';
 import {QuizComponent} from './quiz/quiz.component';
 import {QuestionComponent} from './quiz/question/question.component';
 import {FormsModule} from "@angular/forms";
-import { DeveloperComponent } from './contact/developer/developer.component';
+import {DeveloperComponent} from './contact/developer/developer.component';
 
 @NgModule({
   declarations: [
