@@ -15,6 +15,7 @@ import {QuizComponent} from './quiz/quiz.component';
 import {QuestionComponent} from './quiz/question/question.component';
 import {FormsModule} from "@angular/forms";
 import {DeveloperComponent} from './contact/developer/developer.component';
+import {ResultComponent} from './quiz/result/result.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {DeveloperComponent} from './contact/developer/developer.component';
     DeveloperComponent,
     QuizComponent,
     QuestionComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,

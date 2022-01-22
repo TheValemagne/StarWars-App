@@ -11,6 +11,7 @@ export class QuizComponent implements OnInit {
   questions: Question[] = [];
   score = 0;
   indexCurrentQuestion = 0;
+  finished = false;
 
 
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class QuizComponent implements OnInit {
     if (this.indexCurrentQuestion + 1 < this.questions.length) {
       this.indexCurrentQuestion++;
     } else {
-      // TODO auswertung
+      this.finished = true;
     }
   }
 
