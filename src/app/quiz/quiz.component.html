@@ -1,0 +1,11 @@
+<mat-progress-bar [value]="(indexCurrentQuestion+1)/questions.length * 100" mode="determinate"></mat-progress-bar>
+
+<app-question (answer)="nextQuestion($event)"
+              [question]="questions[indexCurrentQuestion]"
+>
+</app-question>
+
+
+
+
+

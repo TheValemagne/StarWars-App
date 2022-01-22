@@ -1,0 +1,25 @@
+<section>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <label>{{question.question}}</label>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-radio-group [(ngModel)]="answerIndex">
+        <mat-radio-button *ngFor="let answer of question.answers; let i = index"
+                          [value]="i"
+                          class="radio-block mat-radio-button mat-radio-ripple"
+        >{{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button (click)="onSubmitQuestion()" color="primary" mat-fab type="button">
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>

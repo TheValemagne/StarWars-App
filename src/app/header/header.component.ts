@@ -1,7 +1,5 @@
-import { Component, 
-         Input, 
-         OnInit } from '@angular/core';
-import { DrawerComponent } from '../drawer/drawer.component';
+import {Component, Input, OnInit} from '@angular/core';
+import {DrawerComponent} from '../drawer/drawer.component';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +9,8 @@ import { DrawerComponent } from '../drawer/drawer.component';
 export class HeaderComponent implements OnInit {
   @Input() drawer!: DrawerComponent;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
