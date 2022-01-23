@@ -9,3 +9,8 @@ mat-drawer-container {
 .sidenav_container {
   min-height: calc(100vh - 64px) !important;
 }
+
+.active-list-item,
+.active-list-item:hover {
+  background-color: yellow;
+}

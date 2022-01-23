@@ -80,7 +80,7 @@ export class GraphComponent {
    */
   onChartInit(myChart: any) {
     let valeurs: any[] = this.personnageList.map(
-      personnage => { 
+      personnage => {
         return {value: personnage.tempsEcran, itemStyle: {color: personnage.color}};
       }
     );
