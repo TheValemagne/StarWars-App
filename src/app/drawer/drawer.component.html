@@ -1,22 +1,34 @@
 <mat-drawer-container class="example-container">
   <mat-drawer #drawer mode="side">
     <mat-nav-list>
-      <mat-list-item [routerLink]="['/accueil']">
+      <mat-list-item [routerLink]="['/accueil']"
+                     routerLinkActive="active-link"
+      >
         <span class="full-width">Accueil</span>
         <mat-icon mat-list-icon>home</mat-icon>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/univers']">
+
+      <mat-list-item [routerLink]="['/univers']"
+                     routerLinkActive="active-link"
+      >
         <span class="full-width">Univers</span>
         <mat-icon mat-list-icon>public</mat-icon>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/quiz']">
+
+      <mat-list-item [routerLink]="['/quiz']"
+                     routerLinkActive="active-link"
+      >
         <span class="full-width">Quiz</span>
         <mat-icon mat-list-icon>quiz</mat-icon>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/contact']">
+
+      <mat-list-item [routerLink]="['/contact']"
+                     routerLinkActive="active-link"
+      >
         <span class="full-width">Contact</span>
         <mat-icon mat-list-icon>contact_support</mat-icon>
       </mat-list-item>
+      
     </mat-nav-list>
   </mat-drawer>
 

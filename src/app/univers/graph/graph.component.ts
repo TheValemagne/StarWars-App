@@ -40,19 +40,20 @@ export class GraphComponent {
     },
     title: {
       text: 'Temps à l\'écran par personnages',
+      top: 0,
       left: 'center',
-      padding: [0, 0],
+      padding: [0, 0, 5, 0],
       textStyle: {
         align: 'center',
-        fontSize: 25
+        fontSize: 16,
       }
     },
     xAxis: {
       name: 'Personnages',
       nameLocation: 'middle',
       nameTextStyle: {
-        padding: 6,
-        fontSize: 18
+        padding: 10,
+        fontSize: 14
       },
       type: 'category',
       data: [
@@ -64,7 +65,7 @@ export class GraphComponent {
       name: 'Temps à l\'écran (min)',
       nameTextStyle: {
         align: 'left',
-        fontSize: 18
+        fontSize: 14
       },
       type: 'value',
     },
@@ -78,14 +79,18 @@ export class GraphComponent {
    * @param myChart l'instance du graphique
    */
   onChartInit(myChart: any) {
-    let map: Map<string, any> = new Map();
-    for (let personnage of this.personnageList) {
-      map.set(personnage.nom, {value: personnage.tempsEcran, itemStyle: {color: personnage.color}});
-    }
+    let valeurs: any[] = this.personnageList.map(
+      personnage => { 
+        return {value: personnage.tempsEcran, itemStyle: {color: personnage.color}};
+      }
+    );
 
-    let valeurs = Array.from(map.values());
     this.chartOption.series = [{
       type: "bar",
+      label: {
+        show: true,
+        position: 'top'
+      },
       color: [...this.personnageList.map(personnage => personnage.color)],
       data: valeurs
     }];
