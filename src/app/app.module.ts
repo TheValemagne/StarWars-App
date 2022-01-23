@@ -19,6 +19,7 @@ import {DeveloperComponent} from './contact/developer/developer.component';
 import {UniversComponent} from './univers/univers.component';
 import {GraphComponent} from './univers/graph/graph.component';
 import {ResultComponent} from './quiz/result/result.component';
+import {LoaderComponent} from './quiz/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {ResultComponent} from './quiz/result/result.component';
     QuestionComponent,
     ResultComponent,
     UniversComponent,
-    GraphComponent
+    GraphComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

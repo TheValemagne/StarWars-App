@@ -12,6 +12,7 @@ export class QuizComponent implements OnInit {
   score = 0;
   indexCurrentQuestion = 0;
   finished = false;
+  loading = false;
 
 
   ngOnInit(): void {
@@ -44,6 +45,8 @@ export class QuizComponent implements OnInit {
       this.indexCurrentQuestion++;
     } else {
       this.finished = true;
+      this.loading = true;
+      setTimeout(() => this.loading = false, 2000);
     }
   }
 

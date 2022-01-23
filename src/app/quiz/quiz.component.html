@@ -7,7 +7,9 @@
   </app-question>
 </div>
 
-<app-result *ngIf="finished" [scorePercentage]="score/questions.length * 100"></app-result>
+<app-loader *ngIf="loading"></app-loader>
+
+<app-result *ngIf="finished && !loading" [scorePercentage]="score/questions.length * 100"></app-result>
 
 
 
