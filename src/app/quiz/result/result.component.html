@@ -1,2 +1,17 @@
-{{scorePercentage}}
-{{status.rang}}
+<div class="card-wrapper">
+  <mat-card>
+    <img [src]="status.image" alt mat-card-image>
+
+    <mat-card-title>
+      Ton rang : <strong>{{status.rang}}</strong>
+    </mat-card-title>
+
+    <mat-card-content>
+      <p>{{status.text}}</p>
+    </mat-card-content>
+
+    <mat-card-footer align="end">
+      Ton score : <strong>{{scorePercentage}} %</strong>
+    </mat-card-footer>
+  </mat-card>
+</div>

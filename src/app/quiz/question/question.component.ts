@@ -4,7 +4,7 @@ import {Question} from "../question.model";
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss']
+  styleUrls: ['../quiz.component.scss', './question.component.scss']
 })
 export class QuestionComponent implements OnChanges {
   @Input()

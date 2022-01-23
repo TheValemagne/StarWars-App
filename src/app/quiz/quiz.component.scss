@@ -1,1 +1,15 @@
+.card-wrapper {
+  margin: 1em;
+}
 
+mat-card {
+  width: auto;
+  max-width: 600px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-card-footer {
+  padding: 5px;
+}
