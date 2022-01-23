@@ -2,6 +2,7 @@
   <mat-card>
     <mat-card-header>
       <mat-card-title>
+        <img *ngIf="question.image" [src]="question.image" alt>
         <label>{{question.question}}</label>
       </mat-card-title>
     </mat-card-header>

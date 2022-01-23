@@ -11,11 +11,29 @@ export class QuizComponent implements OnInit {
   questions: Question[] = [];
   score = 0;
   indexCurrentQuestion = 0;
+  finished = false;
 
 
   ngOnInit(): void {
-    this.questions.push(new Question('une question?', ['sol 1', 'sol 2', 'sol 3'], 1));
-    this.questions.push(new Question('encore une question ?', ['numéro 1', 'numéro 2', 'numéro 3'], 0));
+    this.questions.push(new Question('Comment s\'appelle le vaisseau de Han Solo ?',
+      ['La Fregate Nebulon', 'Le Faucon Millenium', 'L\'Aigle de l\'espace'], 1,
+      'assets/images/milleniumFalcon.jpg'));
+
+    this.questions.push(new Question("Qui propose au Sénat d'accorder les pleins pouvoirs à Palpatine ?",
+      ['Dark Maul', 'Palpatine lui-même', 'Jar Jar Binks'], 2,
+      'assets/images/senate.jpg'));
+
+    this.questions.push(new Question('Comment se termine la prophétie ? "Un Jedi viendra. Pour détruire les Sith. Et ..."',
+      ['être le meilleur pilote dans toute la galaxie', 'vous apprendre à vous méfier des prophéties', "rétablir l'équilibre dans la Force"], 2,
+      'assets/images/anakinSith.jpg'));
+
+    this.questions.push(new Question('Dark Vador est ... de Luke ?',
+      ['le père', 'le frère jumeau', 'pas apparenté à Luke. C\'est juste un mensonge.'],
+      0, 'assets/images/skywalkerFamily.jpg'));
+
+    this.questions.push(new Question('Alors, finalement, qui a tiré en premier ?',
+      ['Han Solo', 'Greedo', 'Ils on ont tiré en même temps'],
+      0, 'assets/images/greedoAndHanSolo.jpg'));
   }
 
   nextQuestion(isAnswerCorrect: boolean): void {
@@ -25,7 +43,7 @@ export class QuizComponent implements OnInit {
     if (this.indexCurrentQuestion + 1 < this.questions.length) {
       this.indexCurrentQuestion++;
     } else {
-      // TODO auswertung
+      this.finished = true;
     }
   }
 

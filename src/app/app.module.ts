@@ -18,6 +18,7 @@ import {FormsModule} from "@angular/forms";
 import {DeveloperComponent} from './contact/developer/developer.component';
 import {UniversComponent} from './univers/univers.component';
 import {GraphComponent} from './univers/graph/graph.component';
+import {ResultComponent} from './quiz/result/result.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {GraphComponent} from './univers/graph/graph.component';
     DeveloperComponent,
     QuizComponent,
     QuestionComponent,
+    ResultComponent,
     UniversComponent,
     GraphComponent
   ],
