@@ -1,13 +1,13 @@
-mat-card {
-  border-radius: 25px;
-}
-
 .example-card {
   width: auto;
   max-width: 1200px;
   margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
+}
+
+mat-card {
+  border-radius: 25px;
 }
 
 mat-card:hover {
@@ -24,26 +24,26 @@ mat-card-subtitle.info {
 
 .info {
   padding-top: 15px;
+
+  mat-icon + a {
+    top: 8px;
+    height: 18px;
+    line-height: normal;
+  }
+
+  a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  a:hover {
+    color: #ff4081;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .info + .info {
   padding-top: 5px;
-}
-
-.info mat-icon + a {
-  top: 8px;
-  height: 18px;
-  line-height: normal;
-}
-
-.info a {
-  color: #555555;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.info a:hover {
-  color: #ff4081;
-  font-weight: 500;
-  transition: 0.3s ease-in-out;
 }

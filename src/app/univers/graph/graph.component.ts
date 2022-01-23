@@ -45,7 +45,7 @@ export class GraphComponent {
       padding: [0, 0, 5, 0],
       textStyle: {
         align: 'center',
-        fontSize: 16,
+        fontSize: 16
       }
     },
     xAxis: {
@@ -58,8 +58,7 @@ export class GraphComponent {
       type: 'category',
       data: [
         ...this.personnageList.map(personnage => personnage.nom)
-      ],
-
+      ]
     },
     yAxis: {
       name: 'Temps à l\'écran (min)',
@@ -67,7 +66,7 @@ export class GraphComponent {
         align: 'left',
         fontSize: 14
       },
-      type: 'value',
+      type: 'value'
     },
     tooltip: {
       trigger: 'item',
@@ -81,7 +80,7 @@ export class GraphComponent {
   onChartInit(myChart: any) {
     let valeurs: any[] = this.personnageList.map(
       personnage => {
-        return {value: personnage.tempsEcran, itemStyle: {color: personnage.color}};
+        return { value: personnage.tempsEcran, itemStyle: {color: personnage.color} };
       }
     );
 
@@ -107,6 +106,5 @@ export class GraphComponent {
         }
       }
     });
-    console.log(this.myChart)
   }
 }
