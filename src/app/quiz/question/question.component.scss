@@ -13,7 +13,6 @@ mat-card {
 .radio-block {
   display: block;
   margin-top: 0.5em;
-  width: auto;
 }
 
 .mat-card img {
@@ -21,3 +20,6 @@ mat-card {
   height: auto;
 }
 
+.wrap-text {
+  white-space: normal;
+}
