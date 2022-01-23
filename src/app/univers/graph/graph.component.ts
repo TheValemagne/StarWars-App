@@ -71,7 +71,7 @@ export class GraphComponent {
     },
     tooltip: {
       trigger: 'item',
-      formatter: '{b} :\n {c} min'
+      formatter: '{b} :<br/> {c} min'
     }
   };
 
