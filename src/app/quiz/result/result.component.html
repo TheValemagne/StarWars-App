@@ -11,7 +11,15 @@
     </mat-card-content>
 
     <mat-card-footer align="end">
-      Ton score : <strong>{{scorePercentage}} %</strong>
+      <p>Ton score : <strong>{{scorePercentage}} %</strong></p>
+
+      <button (click)="restartQuiz()" color="primary" mat-raised-button
+              type="button">
+        Recommencer le quiz
+      </button>
+
     </mat-card-footer>
+
+
   </mat-card>
 </div>
