@@ -9,8 +9,8 @@
       <mat-radio-group [(ngModel)]="answerIndex">
         <mat-radio-button *ngFor="let answer of question.answers; let i = index"
                           [value]="i"
-                          class="radio-block mat-radio-button mat-radio-ripple"
                           aria-labelledby="question"
+                          class="radio-block mat-radio-button mat-radio-ripple"
         ><span class="wrap-text">{{answer}}</span>
         </mat-radio-button>
       </mat-radio-group>

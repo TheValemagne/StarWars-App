@@ -7,6 +7,7 @@ import {AppComponent} from './app.component';
 
 import {AppRoutingModule} from './app-routing.module';
 import {MaterialModule} from './material.module';
+import {CarouselModule} from 'ngx-owl-carousel-o';
 
 import {HeaderComponent} from './header/header.component';
 import {DrawerComponent} from './drawer/drawer.component';
@@ -20,6 +21,7 @@ import {UniversComponent} from './univers/univers.component';
 import {GraphComponent} from './univers/graph/graph.component';
 import {ResultComponent} from './quiz/result/result.component';
 import {LoaderComponent} from './quiz/loader/loader.component';
+import {CarouselComponent} from './accueil/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import {LoaderComponent} from './quiz/loader/loader.component';
     ResultComponent,
     UniversComponent,
     GraphComponent,
-    LoaderComponent
+    LoaderComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import {LoaderComponent} from './quiz/loader/loader.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    CarouselModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts')
     })
