@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Question} from "./question.model";
+import {questions} from "../../assets/quizData";
 
 @Component({
   selector: 'app-quiz',
@@ -16,25 +17,7 @@ export class QuizComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.questions.push(new Question('Comment s\'appelle le vaisseau de Han Solo ?',
-      ['La Fregate Nebulon', 'Le Faucon Millenium', 'L\'Aigle de l\'espace'], 1,
-      'assets/images/milleniumFalcon.jpg'));
-
-    this.questions.push(new Question("Qui propose au Sénat d'accorder les pleins pouvoirs à Palpatine ?",
-      ['Dark Maul', 'Palpatine lui-même', 'Jar Jar Binks'], 2,
-      'assets/images/senate.jpg'));
-
-    this.questions.push(new Question('Comment se termine la prophétie ? "Un Jedi viendra. Pour détruire les Sith. Et ..."',
-      ['être le meilleur pilote dans toute la galaxie', 'vous apprendre à vous méfier des prophéties', "rétablir l'équilibre dans la Force"], 2,
-      'assets/images/anakinSith.jpg'));
-
-    this.questions.push(new Question('Dark Vador est ... de Luke ?',
-      ['le père', 'le frère jumeau', 'pas apparenté à Luke. C\'est juste un mensonge.'],
-      0, 'assets/images/skywalkerFamily.jpg'));
-
-    this.questions.push(new Question('Alors, finalement, qui a tiré en premier ?',
-      ['Han Solo', 'Greedo', 'Ils on ont tiré en même temps'],
-      0, 'assets/images/greedoAndHanSolo.jpg'));
+    this.questions = questions;
   }
 
   nextQuestion(isAnswerCorrect: boolean): void {
