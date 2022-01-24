@@ -50,4 +50,10 @@ export class QuizComponent implements OnInit {
     }
   }
 
+  restartQuiz(): void {
+    this.score = 0;
+    this.indexCurrentQuestion = 0;
+    this.finished = false;
+  }
+
 }

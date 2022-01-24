@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-result',
@@ -8,6 +8,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ResultComponent implements OnInit {
   @Input()
   scorePercentage!: number;
+
+  @Output()
+  restart = new EventEmitter();
 
   status!: ResultStatus;
 
@@ -24,6 +27,10 @@ export class ResultComponent implements OnInit {
     } else {
       this.status = new ResultStatus('Gungan', 'assets/images/jarjar.jpg', 'Votre capacité à parler ne vous rend pas intélligent !')
     }
+  }
+
+  restartQuiz(): void {
+    this.restart.emit();
   }
 
 }
