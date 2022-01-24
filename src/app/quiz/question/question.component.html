@@ -1,6 +1,6 @@
 <div class="card-wrapper">
   <mat-card>
-    <img *ngIf="question.image" [src]="question.image" alt mat-card-image>
+    <img *ngIf="question.image" [src]="question.image" alt aria-hidden="true" mat-card-image>
     <mat-card-title>
       <label id="question">{{question.question}}</label>
     </mat-card-title>
@@ -18,7 +18,12 @@
     </mat-card-content>
 
     <mat-card-actions align="end">
-      <button (click)="onSubmitQuestion()" color="primary" mat-fab type="button">
+      <button (click)="onSubmitQuestion()"
+              aria-label="Passer à la prochaine question"
+              color="primary"
+              mat-fab
+              type="button"
+      >
         <mat-icon>arrow_forward_ios</mat-icon>
       </button>
     </mat-card-actions>
