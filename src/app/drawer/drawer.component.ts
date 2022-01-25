@@ -8,7 +8,7 @@ import {MatDrawer} from '@angular/material/sidenav';
 })
 export class DrawerComponent implements OnInit {
   @ViewChild(MatDrawer) drawer!: MatDrawer;
-  breakPoint = 900;
+  breakPoint = 1080;
 
   ngOnInit(): void {
   }
@@ -20,7 +20,7 @@ export class DrawerComponent implements OnInit {
 
   @HostListener('window:resize')
   onResize() {
-    if (window.innerWidth < 900 && this.drawer.opened) {
+    if (window.innerWidth < this.breakPoint && this.drawer.opened) {
       this.drawer.mode = 'over';
     } else if (this.drawer.opened) {
       this.drawer.mode = 'side';
