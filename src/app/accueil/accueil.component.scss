@@ -8,6 +8,12 @@ h1 {
   margin-right: auto;
 }
 
+@media screen and (max-width: 575px) {
+  .container {
+    margin: 1em;
+  }
+}
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .container {
     max-width: 540px;
