@@ -8,7 +8,7 @@ h1 {
   margin-right: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 575px) {
   .container {
     margin: 1em;
   }
@@ -28,17 +28,23 @@ h1 {
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 900px;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .container {
-    max-width: 1140px;
+    max-width: 1050px;
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
   .container {
     max-width: 1320px;
   }

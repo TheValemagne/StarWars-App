@@ -21,20 +21,17 @@ export class CarouselComponent {
     items: 1,
     loop: true,
     center: true,
-    merge: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
     responsiveRefreshRate: 200,
     responsive: {
       0: {
         items: 1
       }
-    },
-    nav: true
+    }
   }
 
   changeOptions() {
