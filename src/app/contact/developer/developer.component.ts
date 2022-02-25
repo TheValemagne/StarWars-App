@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Developer} from '../developer.modele';
+import {Developer} from '../developer.model';
 
 @Component({
   selector: 'app-developer',
